@@ -1,0 +1,31 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<div class="jumbotron">
+    
+        <img src="~/content/images/quiz-xs.png" class="img-responsive col-lg-offset-2" />
+    
+    @*<h1 class="col-md-7">Quiz Challenge!</h1>*@
+    
+</div>
+
+<div class="wrapper row clearfix">
+    <div class="col-md-6 row clearfix">
+        <div>
+            <button type="button" id="get-question-button" class="btn btn-info clearfix" >Challenge!</button>
+        </div>
+        <div id="question-display">
+
+        </div>
+    </div>
+
+    <div id="answer-result" class="col-md-5">
+
+    </div>
+    
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/Scripts/quizChallenge.js")
+}
